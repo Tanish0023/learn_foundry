@@ -1,5 +1,31 @@
-cache/
+# Ignore Foundry build artifacts
 out/
+cache/
 
-node_modules
+# Ignore Foundry test gas snapshots
+.gas-snapshot
+
+# Ignore dependencies (should be installed via forge install or npm/yarn)
+lib/
+node_modules/
+
+# Ignore editor-specific files
+.vscode/
+
+# Ignore environment files (if any)
+.env
+
+# Ignore package manager lock files (optional, if you prefer not to track them)
 package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Ignore remapping file if auto-generated
+remapping.txt
+
+# Ignore Git metadata files
+.gitmodules
+
+# Ignore any other temporary or OS-generated files
+.DS_Store
+Thumbs.db
